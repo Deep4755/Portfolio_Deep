@@ -37,10 +37,7 @@ function Hero() {
           <div className='w-2 h-2 bg-emerald-400 rounded-full'></div>
           <span className='text-sm font-medium'>Open to full-time opportunities</span>
         </div>
-        <div className='flex items-center gap-3 text-emerald-400'>
-          <div className='w-2 h-2 bg-emerald-400 rounded-full'></div>
-          <span className='text-sm font-medium'>Quick response within 24 hours</span>
-        </div>
+       
       </div>
        
       </div>

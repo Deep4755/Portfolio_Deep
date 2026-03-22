@@ -12,9 +12,6 @@ function Contact() {
         <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
           Currently available for freelance projects and open to new full-time opportunities. Drop me a message and let's chat.
         </p>
-        <p className="mt-4 text-emerald-400 font-medium">
-          Let's discuss your project — I typically respond within 24 hours.
-        </p>
            <div className='mt-10'>
         <a href="mailto:sandeep8837505136@gmail.com"
         className='flex items-center gap-4 text-white hover:opacity-80 transition-opacity duration-200'>
