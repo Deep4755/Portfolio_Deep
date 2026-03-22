@@ -2,7 +2,7 @@
 
 A modern, professional portfolio website showcasing my expertise in full-stack web development. Built to attract freelance clients and demonstrate real-world project capabilities to potential employers.
 
-**[View Live Portfolio →](https://your-portfolio-domain.com)**
+**[View Live Portfolio →](https://codebydeep-co-uk-913554.hostingersite.com/)**
 
 ---
 
@@ -125,4 +125,4 @@ Full-Stack MERN Developer
 
 ---
 
-**Available for freelance projects and full-time opportunities. Quick response within 24 hours.**
+**Available for freelance projects and full-time opportunities.**
