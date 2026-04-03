@@ -1,64 +1,41 @@
-import React from 'react'
 import { Code2, Server, Database, FileJson, Blocks, Paintbrush, Wind, Github } from "lucide-react";
+
+const techs = [
+  { icon: Code2, label: 'React', color: 'text-cyan-400' },
+  { icon: Server, label: 'Node.js', color: 'text-emerald-400' },
+  { icon: FileJson, label: 'Express', color: 'text-yellow-400' },
+  { icon: Database, label: 'MongoDB', color: 'text-green-400' },
+  { icon: FileJson, label: 'JavaScript', color: 'text-yellow-300' },
+  { icon: Blocks, label: 'HTML', color: 'text-orange-400' },
+  { icon: Paintbrush, label: 'CSS', color: 'text-blue-400' },
+  { icon: Wind, label: 'Tailwind', color: 'text-cyan-300' },
+  { icon: Github, label: 'GitHub', color: 'text-white/80' },
+]
 
 function TechStack() {
   return (
-   <section id='techstack' className='mx-auto max-w-7xl px-6 py-20'>
-    <div className='text-center'>
-      <h2 className='text-4xl font-bold text-white md:text-5xl'>
-        Tech Stack
-      </h2>
-      <p className='mx-auto mt-6 max-w-3xl text-lg text-white/70'>
+    <section id='techstack' className='mx-auto max-w-7xl px-6 py-20'>
+      <div className='text-center'>
+        <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-white'>
+          Tech Stack
+        </h2>
+        <p className='mx-auto mt-4 max-w-2xl text-base sm:text-lg text-white/70'>
           My primary tools for building full-stack applications and modern web experiences.
-      </p>
-    </div>
+        </p>
+      </div>
 
-    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-      <Code2 size={32} className="mb-6 text-cyan-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">React</h3>
-  </div>
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-    <Server size={32} className="mb-6 text-emerald-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">Node.js</h3>
-  </div>
-
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-    <FileJson size={32} className="mb-6 text-yellow-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">Express</h3>
-  </div>
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-    <Database size={32} className="mb-6 text-yellow-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">MongoDB</h3>
-  </div>
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-    <FileJson size={32} className="mb-6 text-yellow-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">JavaScript</h3>
-  </div>
-</div>
-
-<div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-<Blocks size={32} className="mb-6 text-cyan-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">HTML</h3>
-  </div>
-
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-    <Paintbrush size={32} className="mb-6 text-emerald-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">CSS</h3>
-  </div>
-
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-    <Wind size={32} className="mb-6 text-yellow-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">Tailwind</h3>
-  </div>
-  <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center hover:bg-white/10 transition-all duration-300 group">
-    <Github size={32} className="mb-6 text-yellow-400 mx-auto group-hover:scale-110 transition-transform duration-300" />
-    <h3 className="text-2xl font-semibold text-white">GitHub</h3>
-  </div>
-</div>
-
-   </section>
+      <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        {techs.map(({ icon: Icon, label, color }) => (
+          <div
+            key={label}
+            className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center hover:bg-white/10 transition-all duration-300 group"
+          >
+            <Icon size={28} className={`mb-4 mx-auto ${color} group-hover:scale-110 transition-transform duration-300`} />
+            <h3 className="text-base font-semibold text-white">{label}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
   )
 }
 
